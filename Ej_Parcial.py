@@ -10,10 +10,12 @@ def parse_json_jugadores(nombre_archivo:str) -> list:
     lista_json = json.load(archivo)["jugadores"]
     archivo.close()
     return deepcopy(lista_json)
+
 """Parsea un archivo JSON y devuelve una lista de jugadores.
     :param nombre_archivo: Nombre del archivo JSON a parsear.
     :return: Lista de jugadores en formato JSON.
     """
+
 '''FUNCIONA'''#pregunta continuar
 def pregunta_continuar() -> bool:
     preg_continuar = input("Quiere ver las estadísticas de otro jugador? S/N ")
